@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+  /*I set the max-width to 768 so the website would be responsive and also work on tablets/in landscape mode instead of only working on an iPhone 5 at 320px. Since the website's elements are fairly simple I could center them all using margin and make sure that they were 80% of the screen to ensure it always fits. I just wanted to clarify since it was different from what we were told to do in class!*/
+body {
+  margin: 0;
+}
+
+header {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  height: 45px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+main {
+  margin: 80px auto;
+  max-width: 80vw;
+}
+
+nav {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  background: #fff;
+  height: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 45px;
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+  width: 100vw;
+  z-index: 1;
+}
+
+nav.expanded {
+  height: calc(100vh - 45px);
+  overflow: scroll;
+}
+
+nav ul {
+  margin: 25px auto;
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+}
+
+nav li a {
+  padding: 0;
+}
+
+.mobile-logo {
+  display: block;
+  margin: 7.5px auto;
+  width: 60px;
+}
+
+.mobile-nav-toggle {
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  right: 15px;
+  top: 12.5px;
+}
+
+.nav-logo {
+  display: none;
+}
+
+#about-me-photo {
+  float: none;
+}
+
+}

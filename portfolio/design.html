@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <!--I used a different syntax from the course notes because it wasn't working and this was on Mozilla's developer site-->
+  <title>Zoe Kafkes Design</title>
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/mobile.css" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.min.css?v=1.5.5" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.css"/>
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/jgallery.min.js?v=1.5.5"></script>
+  <script type="text/javascript" src="js/touchswipe.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Zoe Kafkes - Design</h1>
+      <a class='mobile-logo' href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes" height='30'></a>
+      <a class='mobile-nav-toggle' onclick='navToggle()'><i class='fa fa-bars'></i></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li class='nav-logo'><a href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes Logo"></a></li>
+      <li><a href="about-me.html">about me</a></li>
+      <li><a href="design.html">design</a></li>
+      <li><a href="photography.html">photography</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <h1>picas.</h1>
+  <p>
+    I started college thinking graphic design was scary. Four years later and it is one of my favorite things to do. Between various classes, my job working at University of Miami's Housing and Residential Life (and a lot of people crying for help in the meantime), I have built a strong skill set as a designer. To hire me for design work, <a href="contact.html">feel free to send a note</a>.
+  </p>
+
+  <div id="gallery">
+    <a href="img/large/Design1.jpg"><img src="img/thumbs/D1.jpg" alt="Press Kit Folder" /></a>
+    <a href="img/large/Design2.jpg"><img src="img/thumbs/D2.jpg" alt="Company Logo" /></a>
+    <a href="img/large/Design3.jpg"><img src="img/thumbs/D3.jpg" alt="Program Poster" /></a>
+    <a href="img/large/Design4.jpg"><img src="img/thumbs/D4.jpg" alt="Infographic" /></a>
+    <a href="img/large/Design5.jpg"><img src="img/thumbs/D5.jpg" alt="Event Program" /></a>
+    <a href="img/large/Design6.jpg"><img src="img/thumbs/D6.jpg" alt="Program Poster" /></a>
+    <a href="img/large/Design7.jpg"><img src="img/thumbs/D7.jpg" alt="Digital Display" /></a>
+    <a href="img/large/Design8.jpg"><img src="img/thumbs/D8.jpg" alt="Newsletter Design" /></a>
+  </div>
+
+<script type="text/javascript">
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "backgroundColor":"white",
+        "height":"375px",
+        "maxMobileWidth":"300",
+        "mode":"standard",
+        "textColor":"FFFFFF",
+        "thumbnails":"true",
+        "thumbnailsHideOnMobile":"true",
+        "thumbnailsPosition":"right",
+        "thumbType":"image",
+        "transition":"moveToLeft_moveFromRight",
+        "transitionBackward":"moveToRight_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "width":"100%",
+        } );
+    $( '#gallery' ).jGallery( {
+       canMinimalizeThumbnails: false
+        } );
+    $( '#gallery' ).jGallery( {
+        thumbnailsHideOnMobile: true
+        } );
+    $( '#gallery' ).jGallery( {
+        slideshow: false
+        } );
+} );
+</script>
+</main>
+</body>
+</html>

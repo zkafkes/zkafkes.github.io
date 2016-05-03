@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <!--I used a different syntax from the course notes because it wasn't working and this was on Mozilla's developer site-->
+  <title>Zoe Kafkes Photography</title>
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/mobile.css" rel="stylesheet" media="screen" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.min.css?v=1.5.5" />
+  <link rel="stylesheet" type="text/css" media="all" href="jgallery/dist/css/jgallery.css"/>
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+  <script type="text/javascript" src="js/jgallery.min.js?v=1.5.5"></script>
+  <script type="text/javascript" src="js/touchswipe.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+  <header>
+    <h1>Zoe Kafkes - Photography</h1>
+      <a class='mobile-logo' href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes" height='30'></a>
+      <a class='mobile-nav-toggle' onclick='navToggle()'><i class='fa fa-bars'></i></a>
+  </header>
+
+  <nav>
+    <ul>
+      <li class='nav-logo'><a href="index.html"><img src="img/logo-04.png" alt="Zoe Kafkes Logo"></a></li>
+      <li><a href="about-me.html">about me</a></li>
+      <li><a href="design.html">design</a></li>
+      <li><a href="photography.html">photography</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+
+<main>
+  <h1>pictures.</h1>
+  <p>
+    I have experience with documentary photography, creative photography and freelance work.  My projects range from making statements about our society to graduation shoots and professional portraiture. To hire me for a shoot, <a href="contact.html">drop me a line</a>.
+  </p>
+
+<div id="gallery">
+  <a href="img/large/Senior1.jpg"><img src="img/thumbs/S1.jpg" alt="Senior Portrait" /></a>
+  <a href="img/large/Senior2.jpg"><img src="img/thumbs/S2.jpg" alt="Senior Portrait" /></a>
+  <a href="img/large/Homicide1.jpg"><img src="img/thumbs/H1.jpg" alt="Special Project: Fall of a Sparrow" /></a>
+  <a href="img/large/Homicide2.jpg"><img src="img/thumbs/H2.jpg" alt="Special Project: Fall of a Sparrow" /></a>
+  <a href="img/large/Misc1.jpg"><img src="img/thumbs/M1.jpg" alt="Social Media Headshot" /></a>
+  <a href="img/large/Misc2.jpg"><img src="img/thumbs/M2.jpg" alt="Group Shoot" /></a>
+  <a href="img/large/Fear1.jpg"><img src="img/thumbs/F1.jpg" alt="Special Project: Fear" /></a>
+  <a href="img/large/Fear2.jpg"><img src="img/thumbs/F2.jpg" alt="Special Project: Fear" /></a>
+</div>
+
+<script type="text/javascript">
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "backgroundColor":"white",
+        "height":"375px",
+        "maxMobileWidth":"300",
+        "mode":"standard",
+        "textColor":"FFFFFF",
+        "thumbnails":"true",
+        "thumbnailsHideOnMobile":"true",
+        "thumbnailsPosition":"right",
+        "thumbType":"image",
+        "transition":"moveToLeft_moveFromRight",
+        "transitionBackward":"moveToRight_moveFromLeft",
+        "transitionCols":"1",
+        "transitionRows":"1",
+        "width":"100%",
+        } );
+    $( '#gallery' ).jGallery( {
+       canMinimalizeThumbnails: false
+        } );
+    $( '#gallery' ).jGallery( {
+        thumbnailsHideOnMobile: true
+        } );
+    $( '#gallery' ).jGallery( {
+        slideshow: false
+        } );
+} );
+</script>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700|Josefin+Sans:700);
+
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 16px;
+  color: #222;
+  max-width: 960px;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 42px;
+}
+
+.index {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 42px;
+}
+
+header h1 {
+  display: none;
+}
+
+main {
+  margin-top: 140px;
+  margin-left: 350px;
+}
+
+nav {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+nav li {
+  display: block;
+  padding: 20px;
+}
+
+nav li a {
+  padding: 0px 20px;
+}
+
+nav li a img {
+  max-width: 160px;
+}
+
+a {
+  color: rgb(31, 176, 133);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgba(31, 176, 133, .5);
+}
+
+a:hover {
+  color: rgba(31, 176, 133, .25);
+}
+
+p img {
+  max-width: 30px;
+  padding-right: 20px;
+}
+
+#contact-info{
+  padding-top: 5px;
+}
+
+#contact-info p {
+  padding-bottom: 5px;
+}
+
+#about-me-photo {
+  float: left;
+  padding-right: 40px;
+}
+
+.clear {
+  clear: both;
+}
+
+.mobile-logo, .mobile-nav-toggle {
+  display: none;
+ }
+
+.mobile-only {
+  display:none;
+}
