@@ -81,6 +81,11 @@ em {
   padding-right: 40px;
 }
 
+.big {
+  font-style: bold;
+  font-size: 21px;
+}
+
 .clear {
   clear: both;
 }
